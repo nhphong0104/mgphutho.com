@@ -1510,7 +1510,7 @@ Main components
 		height:70px;
 		line-height:70px;
 		color:#fff;
-		font-weight:bold;
+		font-weight:500;
 		text-transform:uppercase;
 		overflow: visible;
 		border-bottom: none;
@@ -2223,6 +2223,9 @@ Main components
 }
 .col_3 {
 	width: 25%;
+}
+.col_2 {
+	width: 20%;
 }
 .col-left {
     width:70%;
@@ -3736,7 +3739,7 @@ span.btn-container__btn.btn1 {
     background-color: #e10011;
 }
 .category-car-name{
-    font-size: 2.7rem;
+    font-size: 2rem;
     font-weight: var(--fw800);
     background: linear-gradient(135deg, #9a272a 0%, #ea2b30 100%);
     background-clip: text;
@@ -3755,10 +3758,24 @@ span.btn-container__btn.btn1 {
     margin-bottom: 15px;
 }
 .category-car-price {
-    font-size: 1.5rem;
+    font-size: 18px;
     line-height: 2rem;
 }
 .category-car-price strong {
-    font-size: 2.3rem;
+    font-size: 22px;
     color: var(--red);
+}
+
+.block-car__info {
+    display: flex;
+    gap: 3rem;
+    color: var(--black);
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.block-car__info span {
+    display: block;
+    font-size: 14px;
+    opacity: .7
 }
