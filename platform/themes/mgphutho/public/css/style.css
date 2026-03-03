@@ -3074,6 +3074,10 @@ img {
     font-weight: bold;
     text-align: center;
 }
+
+.col-car{
+    margin-bottom: 15px;
+}
 /* ===== CONTACT US ===== */
 .contact-us {
     margin-bottom: 20px;
