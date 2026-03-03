@@ -1,48 +1,9 @@
+@php
+    Theme::layout('homepage')
+@endphp
+
 <section class="slideshow group">
-    <div class="owl-carousel owl-theme owl-sliderbanner">
-        <div class="item">
-            <a href="/new-mg7-517360s.html" title="">
-                <img class="lazyload" data-src="https://drive.gianhangvn.com/image/image-2767769j31415.jpg"
-                    alt="" />
-            </a>
-        </div>
-        <div class="item">
-            <a href="/mg-zs-501188s.html" title="">
-                <img class="lazyload" data-src="https://drive.gianhangvn.com/image/mg-zs-banner-2568985j31415.jpg"
-                    alt="" />
-            </a>
-        </div>
-        <div class="item">
-            <a href="/mg5-494714s.html" title="">
-                <img class="lazyload" data-src="https://drive.gianhangvn.com/image/image-2569264j31415.png"
-                    alt="" />
-            </a>
-        </div>
-        <div class="item">
-            <a href="/new-mg5-485785s.html" title="">
-                <img class="lazyload" data-src="https://drive.gianhangvn.com/image/new-mg5-banner-2568984j31415.jpg"
-                    alt="" />
-            </a>
-        </div>
-        <div class="item">
-            <a href="/mg-hs-512154s.html" title="">
-                <img class="lazyload" data-src="https://drive.gianhangvn.com/image/mg-hs-banner-2568993j31415.jpg"
-                    alt="" />
-            </a>
-        </div>
-        <div class="item">
-            <a href="/mg-rx5-512152s.html" title="">
-                <img class="lazyload" data-src="https://drive.gianhangvn.com/image/mg-rx5-banner-2568983j31415.jpg"
-                    alt="" />
-            </a>
-        </div>
-        <div class="item">
-            <a href="" title="">
-                <img class="lazyload" data-src="https://drive.gianhangvn.com/image/mg4-banner-2638313j31415.jpg"
-                    alt="" />
-            </a>
-        </div>
-    </div>
+    {!! do_shortcode(theme_option('slideshow')) !!}
 </section>
 <section class="main group">
     <div class="container">

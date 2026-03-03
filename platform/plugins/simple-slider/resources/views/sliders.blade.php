@@ -1,7 +1,7 @@
 @if (! empty($sliders))
     <div class="simple-slider-wrapper">
         <div
-            class="owl-slider owl-carousel carousel--nav inside"
+            class="owl-slider owl-carousel owl-theme carousel--nav inside owl-sliderbanner owl-loaded owl-drag"
             data-owl-auto="true"
             data-owl-loop="true"
             data-owl-speed="7000"

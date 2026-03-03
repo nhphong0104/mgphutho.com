@@ -1,8 +1,10 @@
 <?php
 
 register_page_template([
-    'default' => 'Default',
+    'default' => __('Default'),
+    'homepage' => __('Homepage'),
 ]);
+
 
 register_sidebar([
     'id'          => 'second_sidebar',
