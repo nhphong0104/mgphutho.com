@@ -2551,6 +2551,7 @@ img {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
+    margin-bottom: 15px;
 }
 /* ===== PAGE ===== */
 .top,
@@ -3515,7 +3516,7 @@ table .aligncenter {
 }
 
 table {
-    border: 1px solid #e1e1e1;
+    border: none
 }
 table > thead > tr > th,
 table > tbody > tr > th,
@@ -7070,14 +7071,7 @@ span.btn-container__btn.btn1 {
     padding-right: 5px;
     padding-left: 5px;
 }
-.tt-product {
-    display: inline-block;
-    font-style: italic;
-    font-weight: var(--fw800);
-    position: relative;
-    white-space: nowrap;
-    margin-bottom: 15px;
-}
+
 .category-car-price {
     font-size: 18px;
     line-height: 2rem;
@@ -7218,7 +7212,6 @@ span.btn-container__btn.btn1 {
     font-weight: var(--fw800);
     text-align: center;
     position: relative;
-    white-space: nowrap;
     padding: 10px 13% 6px
 }
 
@@ -7292,6 +7285,13 @@ span.btn-container__btn.btn1 {
     align-items: center;
     justify-content: space-between;
     position: relative
+}
+
+.block-product-feature__wrap .content {
+    padding: 1.25rem 0;
+    position: relative;
+    z-index: 1;
+    font-size: 1.125rem;
 }
 
 .block-product-feature__wrap .content ul {

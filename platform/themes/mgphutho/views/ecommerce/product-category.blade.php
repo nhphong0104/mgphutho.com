@@ -1,48 +1,38 @@
 @php Theme::set('pageName', $category->name) @endphp
 
-<div class="section">
-    <form action="{{ $category->url }}" method="GET">
-        @if (request()->has('q'))
-            <input type="hidden" name="q" value="{{ BaseHelper::stringify(request()->query('q')) }}">
-        @endif
+<div class="container">
 
-        @if (request()->has('categories'))
-            <input type="hidden" name="categories[]" value="{{ Arr::first(request()->query('categories', [])) }}">
-        @endif
-        <div class="container">
+    <h1 class="page-heading">{{ $category->name }}</h1>
+    <div id="gridproductlist">
+        {!! html_entity_decode($category->description) !!}
+        <div
+            style="max-width:700px;padding:20px;margin: 20px auto;border: 3px dotted #32580f;text-align: center;color: #e74c3c;border-radius: 15px;">
+            <h3 style="font-size: 120%;font-weight:bold;margin-bottom:10px;">MG LÁNG HẠ&nbsp;ƯU ĐÃI LỚN TRONG THÁNG</h3>
+
+            <h4 style="font-size: 120%;font-weight:bold;margin-bottom:10px;">HỖ TRỢ TRẢ GÓP VAY 90% - LÃI SUẤT ƯU ĐÃI
+            </h4>
+
             <div class="row">
-                <div class="col-lg-9">
-                    <div class="row align-items-center mb-4 pb-1">
-                        <div class="col-12">
-                            <div class="product_header">
-                                @include(Theme::getThemeNamespace() . '::views.ecommerce.includes.sort')
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row shop_container grid">
-                        @if ($products->count() > 0)
-                            @foreach($products as $product)
-                                <div class="col-md-4 col-6">
-                                    {!! Theme::partial('product-item-grid', compact('product')) !!}
-                                </div>
-                            @endforeach
+                <div class="col-6" style="margin-top:8px; padding-left: 8px; padding-right: 8px;"><a href="tel:0971593326"
+                        style="display: block;overflow: hidden;padding: 9px 0;border-radius: 4px;font-size: 120%;line-height: normal;text-align: center;margin-top:.5rem;color: #fff!important;background-color:#fd6e1d!important;text-decoration:none!important;"><strong>Hotline
+                            0971.593.326</strong><br>
+                        <span style="font-size:12px;">Quý khách vui lòng gọi để có giá xe tốt nhất</span></a></div>
 
-                            <div class="mt-3 justify-content-center pagination_style1">
-                                {!! $products->appends(request()->query())->onEachSide(1)->links() !!}
-                            </div>
-                        @else
-                            <br>
-                            <div class="col-12 text-center">{{ __('No products!') }}</div>
-                        @endif
-                    </div>
-                </div>
-                <div class="col-lg-3 order-lg-first mt-4 pt-2 mt-lg-0 pt-lg-0">
-                    <div class="sidebar">
-                        @include(Theme::getThemeNamespace() . '::views.ecommerce.includes.filters')
-                    </div>
-                </div>
+                <div class="col-6" style="margin-top:8px; padding-left: 8px; padding-right: 8px;"><a
+                        href="javascript:openModelBaoGia();"
+                        style="display: block;overflow: hidden;padding: 9px 0;border-radius: 4px;font-size: 120%;line-height: normal;text-align: center;margin-top:.5rem;color: #fff!important;background-color:#288ad6!important;text-decoration:none!important;"><strong>NHẬN
+                            BÁO GIÁ</strong> <span style="display: block;font-size: 12px;margin-top:3px;">Hoặc đăng ký
+                            nhận Báo giá xe lăn bánh tốt nhất</span></a></div>
             </div>
         </div>
-    </form>
+        <div class="grid-content group">
+            <div class="row">
+                @foreach ($products as $product)
+                    <div class="col-12 col-md-6 col-car">
+                        {!! Theme::partial('product-item', ['product' => $product]) !!}
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    </div>
 </div>
-<!-- END SECTION SHOP -->
