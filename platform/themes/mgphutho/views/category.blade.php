@@ -29,10 +29,6 @@
                 </li>
                 <li class="page-item "><a class="page-link" href="?category=khuyen-mai&amp;i=4">4</a>
                 </li>
-                <!--        <li class="page-item"><a class="page-link" href="#">2</a></li>-->
-                <!--        <li class="page-item"><a class="page-link" href="#">3</a></li>-->
-                <!--        <li class="page-item"><a class="page-link" href="#">4</a></li>-->
-                <!--        <li class="page-item"><a class="page-link" href="#">...</a></li>-->
                 <li class="page-item">
                     <a class="page-link page-link--icon" href="?category=khuyen-mai&amp;i=2"><i
                             class="ic ic--arrow-black"></i></a>

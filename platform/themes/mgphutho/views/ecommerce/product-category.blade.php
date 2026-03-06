@@ -13,9 +13,9 @@
             </h4>
 
             <div class="row">
-                <div class="col-6" style="margin-top:8px; padding-left: 8px; padding-right: 8px;"><a href="tel:0971593326"
+                <div class="col-6" style="margin-top:8px; padding-left: 8px; padding-right: 8px;"><a href="tel:{{theme_option('hotline')}}"
                         style="display: block;overflow: hidden;padding: 9px 0;border-radius: 4px;font-size: 120%;line-height: normal;text-align: center;margin-top:.5rem;color: #fff!important;background-color:#fd6e1d!important;text-decoration:none!important;"><strong>Hotline
-                            0971.593.326</strong><br>
+                            {{theme_option('hotline')}}</strong><br>
                         <span style="font-size:12px;">Quý khách vui lòng gọi để có giá xe tốt nhất</span></a></div>
 
                 <div class="col-6" style="margin-top:8px; padding-left: 8px; padding-right: 8px;"><a
