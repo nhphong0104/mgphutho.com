@@ -9,7 +9,7 @@
             @foreach (get_product_categories() as $item)
                 <li class="">
                     <a href="{{ $item->url }}" title="{{ $item->name }}">
-                        <center><img style="max-width:100%;" class="lazyload" data-src="{{ $item->image }}" /></center>
+                        <center><img style="max-width:100%;" class="lazyload" data-src="{{ RvMedia::getImageUrl($item->image) }}" /></center>
                         <h2 class="sub-title-menu center">{{ $item->name }}</h2>
                     </a>
                 </li>
