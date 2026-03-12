@@ -4766,6 +4766,9 @@ Main components
     -webkit-backface-visibility: hidden;
     -webkit-touch-callout: none;
 }
+.owl-sliderbanner .owl-carousel .owl-item img {
+    max-height: 700px;
+}
 .owl-carousel .owl-item img {
     display: block;
     width: 100%;
