@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Theme\Mgphutho\Http\Controllers\LanbanhController;
 use Theme\Mgphutho\Http\Controllers\MgphuthoController;
 
 // Custom routes
@@ -10,7 +11,9 @@ Route::group(['controller' => MgphuthoController::class, 'middleware' => ['web',
 
         // Add your custom route here
         // Ex: Route::get('hello', 'getHello');
-
+        Route::get('chi-phi-lan-banh', [LanbanhController::class, 'index'])->name('lanbanh.index');
+        //Route::get('/get-category-product/{category}',[LanbanhController::class,'getCategoryProduct']);
+        Route::get('/get-product/{product_id}',[LanbanhController::class,'getProduct']);
     });
 });
 

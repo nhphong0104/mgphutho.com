@@ -34,7 +34,7 @@
 
                 <div class="category-car-desc detail-content">
                     <div class="block-car__info">
-                        {!! BaseHelper::clean($category->category_intro) !!}
+                        {!! BaseHelper::clean($category->category_intro) !!}mg
                     </div>
                 </div>
 

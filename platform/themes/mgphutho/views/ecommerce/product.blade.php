@@ -1,5 +1,4 @@
 <div class="container">
-
     <div class="primary-product group">
         <div class="image-block group slider-product">
             <div class="owl-carousel owl-theme owl-gallery-images">
