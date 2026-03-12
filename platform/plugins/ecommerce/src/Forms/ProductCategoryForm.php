@@ -56,7 +56,7 @@ class ProductCategoryForm extends FormAbstract
             ->add(
                 'category_intro',
                 EditorField::class,
-                ContentFieldOption::make()->label(trans('plugins/ecommerce::product-categories.category_intro'))
+                ContentFieldOption::make()->label("Category introduction")
             )
             ->add('status', SelectField::class, StatusFieldOption::make())
             ->add('image', MediaImageField::class, MediaImageFieldOption::make())

@@ -7210,12 +7210,12 @@ span.btn-container__btn.btn1 {
 }
 
 .tt-product {
-    display: inline-block;
     font-style: italic;
     font-weight: var(--fw800);
-    text-align: center;
+    text-align: left;
     position: relative;
-    padding: 10px 13% 6px
+    padding: 10px 0px 10px;
+    display: block;
 }
 
 .tt-product__bg {
