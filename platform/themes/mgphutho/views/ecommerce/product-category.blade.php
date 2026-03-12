@@ -2,7 +2,16 @@
 
 <div class="container">
 
-    <h1 class="page-heading">{{ $category->name }}</h1>
+    <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="page-title">
+                    <h1 class="page-heading">{{ $category->name }}</h1>
+                </div>
+            </div>
+            <div class="col-md-6">
+                {!! Theme::partial('breadcrumbs') !!}
+            </div>
+        </div>
     <div id="gridproductlist">
         {!! html_entity_decode($category->description) !!}
         <div
