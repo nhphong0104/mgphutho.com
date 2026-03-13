@@ -34,25 +34,11 @@
 
                 <div class="category-car-desc detail-content">
                     <div class="block-car__info">
-                        {!! BaseHelper::clean($category->category_intro) !!}mg
+                        {!! BaseHelper::clean($category->category_intro) !!}
                     </div>
                 </div>
 
-                <div class="row row-form">
-                    <div class="col-6">
-                        <a href="tel:{{ theme_option('hotline') }}" class="btn-container btn-container--gray full-container"
-                            ref="tel:{{ theme_option('hotline') }}">
-                            <span class="btn-container__mas">GỌI NGAY</span>
-                            <span class="btn-container__btn btn1">GỌI NGAY</span>
-                        </a>
-                    </div>
-                    <div class="col-6">
-                        <a href="#" class="btn-container btn-container--gray full-container">
-                            <span class="btn-container__mas">NHẬN ƯU ĐÃI</span>
-                            <span class="btn-container__btn">NHẬN ƯU ĐÃI</span>
-                        </a>
-                    </div>
-                </div>
+                {!! Theme::partial('btn-action') !!}
             </div>
             </div>
            
