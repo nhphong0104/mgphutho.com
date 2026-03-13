@@ -36,25 +36,6 @@
                     </ul>
                 </div>
                 {!! dynamic_sidebar('footer_sidebar') !!}
-
-                <div class="col col_3 footer-block">
-                    <p class="title-footer-block collapse-title">Dịch vụ khách hàng</p>
-                    <ul class="list-group collapse-content">
-                        <li><a href="/bang-gia-xe-485308n.html" title="Bảng giá xe MG">Bảng giá xe MG</a></li>
-                        <li><a href="/mua-xe-tra-gop-485309n.html" title="Mua xe MG trả góp">Mua xe MG trả góp</a></li>
-                        <li><a href="/lien-he.html">Đăng ký lái thử tại Showroom</a></li>
-                    </ul>
-                </div>
-                <div class="col col_3 footer-block">
-                    <p class="title-footer-block collapse-title">Dịch vụ khách hàng</p>
-
-                    <ul class="list-group collapse-content">
-                        <li><a href="/bang-gia-xe-485308n.html" title="Bảng giá xe MG">Bảng giá xe MG</a></li>
-                        <li><a href="/mua-xe-tra-gop-485309n.html" title="Mua xe MG trả góp">Mua xe MG trả góp</a></li>
-                        <li><a href="/lien-he.html">Đăng ký lái thử tại Showroom</a></li>
-                    </ul>
-                </div>
-
             </div>
         </div>
     </div>
@@ -62,7 +43,7 @@
 <div class="copyright group">
     <div class="container group copyright-content">
         <div class="col col_9">
-            <p class="copy-right">Copyright© 2024</p>
+            <p class="copy-right">Copyright© 2026</p>
         </div>
         <div class="col col_3">
         </div>
