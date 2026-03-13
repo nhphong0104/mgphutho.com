@@ -19,6 +19,7 @@ return [
         'description' => 'Export product categories to Excel/CSV file.',
         'total' => 'Total',
     ],
+    'category_intro'=> ['Category introduction'],
     'import' => [
         'description' => 'Import product categories from Excel/CSV file.',
     ],

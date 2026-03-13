@@ -53,6 +53,11 @@ class ProductCategoryForm extends FormAbstract
                 EditorField::class,
                 ContentFieldOption::make()->label(trans('core/base::forms.description'))
             )
+            ->add(
+                'category_intro',
+                EditorField::class,
+                ContentFieldOption::make()->label("Category introduction")
+            )
             ->add('status', SelectField::class, StatusFieldOption::make())
             ->add('image', MediaImageField::class, MediaImageFieldOption::make())
             ->add(
