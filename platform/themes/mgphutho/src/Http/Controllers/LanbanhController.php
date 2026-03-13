@@ -5,6 +5,7 @@ use App\Http\Controllers\Controller;
 use Botble\Ecommerce\Facades\EcommerceHelper;
 use Botble\Ecommerce\Models\ProductCategory;
 use Botble\Ecommerce\Services\Products\GetProductService;
+use Botble\Media\Facades\RvMedia;
 use Botble\Shortcode\View\View;
 use Botble\Theme\Facades\Theme;
 
@@ -36,14 +37,38 @@ class LanbanhController extends Controller
         $request->merge(['categories' => [$category_id]]);
 
         $products = app(GetProductService::class)->getProduct($request, null, null, $with);
-
-        return response()->json($products);
+        $html = "";
+        foreach ($products as $product) {
+            $html .='<option value="'.$product->id.'">'.$product->name.'</option>';
+        }
+        return response()->json([
+            'html' => $html
+        ]);
+        
     }
 
 
-    public function getVersions($model_id)
+    public function getProductDetail($product_id)
     {
+        $product = get_products([
+            'condition' => [
+                'ec_products.id' => $product_id,
+            ],
+            'take' => 1,
+            'with' => EcommerceHelper::withProductEagerLoadingRelations(),
+        ]);
 
+        if (! $product) {
+            abort(404);
+        }
+
+        $product = $product->first();
+
+        return response()->json([
+            'name' => $product->name,
+            'price' => $product->price,
+            'img' => RvMedia::getImageUrl($product->image, 'medium'),
+        ]);
     
     }
     

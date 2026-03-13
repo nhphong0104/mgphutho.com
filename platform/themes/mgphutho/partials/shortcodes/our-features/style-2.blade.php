@@ -15,9 +15,9 @@
                         class="fast-access-icon">&nbsp;<em class="fa fa-calculator">&nbsp;</em></span> <span
                         class="fast-access-title">Thủ tục trả góp</span> </a></div>
 
-            <div class="col-4"><a class="fast-access" href="/bang-gia-xe-485308n.html"><span
+            <div class="col-4"><a class="fast-access" href="/chi-phi-lan-banh"><span
                         class="fast-access-icon">&nbsp;<em class="fa fa-car">&nbsp;</em></span> <span
-                        class="fast-access-title">Bảng giá xe MG</span> </a></div>
+                        class="fast-access-title">Chi phí lăn bánh</span> </a></div>
         </div>
     </div>
 </div>

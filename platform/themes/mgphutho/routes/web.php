@@ -13,7 +13,8 @@ Route::group(['controller' => MgphuthoController::class, 'middleware' => ['web',
         // Ex: Route::get('hello', 'getHello');
         Route::get('chi-phi-lan-banh', [LanbanhController::class, 'index'])->name('lanbanh.index');
         //Route::get('/get-category-product/{category}',[LanbanhController::class,'getCategoryProduct']);
-        Route::get('/get-product/{product_id}',[LanbanhController::class,'getProduct']);
+        Route::get('/get-product/{category_id}',[LanbanhController::class,'getProduct']);
+        Route::get('/get-product-detail/{product_id}',[LanbanhController::class,'getProductDetail']);
     });
 });
 
