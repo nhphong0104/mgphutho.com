@@ -6743,6 +6743,7 @@ li.fancybox-thumbs-loading {
     background-color: #e10012;
     color: #fff;
     border-radius: 4px;
+    cursor: pointer;
 }
 .fast-access:hover,
 .fast-access:focus {
@@ -7494,9 +7495,12 @@ span.btn-container__btn.btn1 {
     border: #ccc solid 1px;
     padding: 15px;
 }
-
+.ck-content{
+    margin-top: 30px;
+}
 .title {
     letter-spacing: 2px;
+    font-size: 28px;
 }
 
 .info-box {
@@ -7538,4 +7542,53 @@ span.btn-container__btn.btn1 {
 .calc-btn {
     font-weight: 600;
     letter-spacing: 1px;
+}
+
+.section {
+    padding: 100px 0;
+    position: relative
+}
+
+.footer_top.small_pt,.section.small_pt {
+    padding-top: 50px
+}
+
+.footer_top.small_pb,.section.small_pb {
+    padding-bottom: 50px
+}
+
+.footer_top.pb_20,.pb_20,.section.pb_20 {
+    padding-bottom: 20px
+}
+
+.footer_top.pb_70,.pb_70,.section.pb_70 {
+    padding-bottom: 70px
+}
+.newsletter_text {
+    padding-left: 80px;
+    position: relative;
+}
+.newsletter_text:before {
+    color: #fff;
+    content: "";
+    font-family: linearicons;
+    font-size: 65px;
+    left: 0;
+    line-height: normal;
+    opacity: .4;
+    position: absolute;
+}
+.text_white * {
+    color: #fff;
+}
+.newsletter_text p:last-child {
+    margin: 0;
+}
+.newsletter_form2 form {
+    position: relative;
+}
+
+.rounded_input .form-control,.rounded_input input {
+    border-radius: 30px;
+    padding: 10px 20px
 }

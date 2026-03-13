@@ -7,7 +7,8 @@
             HÀNG</p>
 
         <div class="row row-form" style="margin-bottom:20px;">
-            <div class="col-4"><a class="fast-access" href="javascript:openModelBaoGia()"><span
+            <div class="col-4">
+                <a class="fast-access" data-bs-toggle="modal" data-bs-target="#newsletter-modal"><span
                         class="icon fast-access-icon">&nbsp;<em class="fa fa-usd">&nbsp;</em></span> <span
                         class="fast-access-title">Yêu cầu báo giá</span> </a></div>
 
