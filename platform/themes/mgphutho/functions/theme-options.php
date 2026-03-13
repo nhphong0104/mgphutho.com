@@ -3,6 +3,21 @@
 app()->booted(function () {
     theme_option()
     ->setField([
+            'id' => 'company_name',
+            'section_id' => 'opt-text-subsection-general',
+            'type' => 'text',
+            'label' => __('Company Name'),
+            'attributes' => [
+                'name' => 'company_name',
+                'value' => null,
+                'options' => [
+                    'class' => 'form-control',
+                    'placeholder' => 'Company Name',
+                    'data-counter' => 30,
+                ],
+            ],
+        ])
+    ->setField([
             'id' => 'hotline',
             'section_id' => 'opt-text-subsection-general',
             'type' => 'text',
