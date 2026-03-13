@@ -4,8 +4,7 @@
         <ul class="ps-list--categories">
             @foreach ($categories as $category)
                 <li>
-                    <a
-                        href="{{ $category->url }}"
+                    <a href="{{ $category->url }}"
                         title="{{ $category->name }}"
                     >{{ $category->name }}</a>
                 </li>
