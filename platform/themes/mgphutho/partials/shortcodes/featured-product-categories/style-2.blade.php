@@ -38,7 +38,7 @@
                     </div>
                 </div>
 
-                <!-- {!! Theme::partial('btn-action') !!} -->
+                
             </div>
             </div>
            
