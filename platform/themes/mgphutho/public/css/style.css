@@ -7214,6 +7214,10 @@ span.btn-container__btn.btn1 {
 .category-car-image {
     min-height: 430px;
 }
+.category-car-image img {
+    max-width: 100%;
+    height: auto;
+}
 .tt-product {
     font-style: italic;
     font-weight: var(--fw800);
@@ -7590,4 +7594,10 @@ span.btn-container__btn.btn1 {
 .rounded_input .form-control,.rounded_input input {
     border-radius: 30px;
     padding: 10px 20px
+}
+
+.heading_s2 h2{
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 0;
 }
