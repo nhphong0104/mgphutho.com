@@ -7214,7 +7214,7 @@ span.btn-container__btn.btn1 {
 .category-car-image {
     min-height: 430px;
 }
-.category-car-image img {
+.category-car-image>img {
     width: 100%;
     height: auto;
 }
