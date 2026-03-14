@@ -22,7 +22,7 @@
                 <div class="category-car-image">
                     <a href="{{ $category->url }}" title="{{ $category->name }}">
                         <img alt="{{ $category->name }}" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
-                            class="lazyload"
+                            class="lazyload" width="100%"
                             data-src="{{ RvMedia::getImageUrl($category->image) }}" /></a>
                 </div>
                 <div class="tt-product">
