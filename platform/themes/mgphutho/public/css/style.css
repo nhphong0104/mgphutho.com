@@ -7215,7 +7215,7 @@ span.btn-container__btn.btn1 {
     min-height: 430px;
 }
 .category-car-image img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 .tt-product {
