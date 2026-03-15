@@ -7550,8 +7550,9 @@ span.btn-container__btn.btn1 {
 }
 
 .section {
-    padding: 100px 0;
-    position: relative
+    padding: 50px 0;
+    position: relative;
+    overflow: hidden;
 }
 
 .footer_top.small_pt,.section.small_pt {
