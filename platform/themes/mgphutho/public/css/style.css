@@ -7214,6 +7214,10 @@ span.btn-container__btn.btn1 {
 .category-car-image {
     min-height: 430px;
 }
+.category-car-image>img {
+    width: 100%;
+    height: auto;
+}
 .tt-product {
     font-style: italic;
     font-weight: var(--fw800);
@@ -7587,12 +7591,12 @@ span.btn-container__btn.btn1 {
 .newsletter_form2 form {
     position: relative;
 }
-
 .rounded_input .form-control,.rounded_input input {
     border-radius: 30px;
     padding: 10px 20px
 }
 
+<<<<<<< HEAD
 .block-brit {
     padding: 2rem 0;
     position: relative
@@ -7670,4 +7674,9 @@ span.btn-container__btn.btn1 {
 
 .block-feature .item-service:hover .item-service__hidden {
     max-height: 500px
+}
+.heading_s2 h2{
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 0;
 }
