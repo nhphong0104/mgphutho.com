@@ -7820,3 +7820,17 @@ span.btn-container__btn.btn1 {
     gap: 8px;
     display: none
 }
+.block-detail .container {
+    max-width: 980px;
+}
+.block-detail__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+.block-detail__content {
+    font-size: 1.125rem;
+}
+.block-detail__content a {
+    color: var(--red);
+}

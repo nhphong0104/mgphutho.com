@@ -30,10 +30,9 @@
 @php $relatedPosts = get_related_posts($post->id, 2); @endphp
 
 @if ($relatedPosts->count())
-    <br>
-    <div class="related_post">
-        <div class="content_title">
-            <h5>{{ __('Related posts') }}</h5>
+    <div class="container">
+        <div class="tt-section">
+            {{ __('Related posts') }}
         </div>
         <div class="row">
             @foreach ($relatedPosts as $relatedItem)
@@ -41,24 +40,21 @@
                     <div class="item-news">
                         <div class="img">
                             <div class="img__bg">
-                                <span
-                                    style="background-image: url({{ RvMedia::getImageUrl($post->image, false, RvMedia::getDefaultImage()) }})"></span>
+                                <span style="background-image: url({{ RvMedia::getImageUrl($relatedItem->image) }})"></span>
                             </div>
-                            <a href="{{ $post->url }}" class="stretched-link"></a>
+                            <a href="{{ $relatedItem->url }}" class="stretched-link"></a>
                         </div>
                         <div class="item-news__content">
                             <div class="mt-4 item-news__tag">
                             </div>
                             <div class="mt-3 fs24 cl-black">
-                                <a href="{{ $post->url }}">{{ $post->name }}</a>
+                                <a href="{{ $relatedItem->url }}">{{ $relatedItem->name }}</a>
                             </div>
-                            <div class="fs18 cl-gray mt-2">{{ Str::limit($post->description, 110) }}</div>
+                            <div class="fs18 cl-gray mt-2">{{ Str::limit($relatedItem->description, 110) }}</div>
                             <div class="mt-4 cl-red fw500 text-end d-none d-md-block">
-                                <span>{{ $post->created_at->translatedFormat('d/m/Y') }}</span>
-                                <!--         <a href="https://mgmotor.vn/tin-tuc/chuong-trinh-uu-dai-thang-11-hanh-trinh-vuon-xa/">Đọc bài viết</a> -->
+                                <span>{{ $relatedItem->created_at->translatedFormat('d/m/Y') }}</span>
                             </div>
                         </div>
-                        <!-- <a href="https://mgmotor.vn/tin-tuc/chuong-trinh-uu-dai-thang-11-hanh-trinh-vuon-xa/" class="stretched-link"></a> -->
                     </div>
                 </div>
             @endforeach
