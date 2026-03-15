@@ -7834,3 +7834,6 @@ span.btn-container__btn.btn1 {
 .block-detail__content a {
     color: var(--red);
 }
+.block-detail {
+    padding-top: 3rem;
+}
