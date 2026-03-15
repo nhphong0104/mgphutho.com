@@ -7592,3 +7592,82 @@ span.btn-container__btn.btn1 {
     border-radius: 30px;
     padding: 10px 20px
 }
+
+.block-brit {
+    padding: 2rem 0;
+    position: relative
+}
+
+.block-brit::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(172, 16, 32, .7);
+    backdrop-filter: blur(20px)
+}
+
+.block-brit .ic--brit-brand {
+    opacity: .2;
+    position: absolute;
+    z-index: 1;
+    bottom: -4rem;
+    right: 0
+}
+
+.block-brit>video {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover
+}
+
+.block-brit .container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    gap: 1rem
+}
+
+.block-brit .fs48 {
+    background: var(--gradient, linear-gradient(90deg, #fff 0%, #bebebe 6%, #797979 12.8%, #9e9e9e 19%, #c8c8c8 27%, #e6e6e6 34.3%, #f8f8f8 40.5%, #fff 45%, #f9f9f9 51.2%, #e9e9e9 59.3%, #cecece 68.3%, #a9a9a9 78%, #7a7a7a 88.2%, #797979 88.6%, #9e9e9e 90.8%, #c8c8c8 93.7%, #e6e6e6 96.2%, #f8f8f8 98.4%, #fff 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0)
+}
+
+.block-feature {
+    display: flex
+}
+
+.block-feature .item-service {
+    height: 560px;
+    text-align: center;
+    padding: 2.5rem 3.5rem
+}
+
+.block-feature .item-service__content {
+    padding: 0
+}
+
+.block-feature .item-service__hidden {
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: 1s ease;
+    -khtml-transition: 1s ease;
+    -moz-transition: 1s ease;
+    -ms-transition: 1s ease;
+    -o-transition: 1s ease;
+    transition: 1s ease
+}
+
+.block-feature .item-service:hover .item-service__hidden {
+    max-height: 500px
+}
