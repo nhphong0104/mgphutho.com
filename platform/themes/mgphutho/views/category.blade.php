@@ -1,6 +1,6 @@
 @php
     Theme::set('pageName', $category->name);
-    Theme::layout('blog-sidebar');
+    Theme::layout('default');
 @endphp
 
 <div id="banner-wrapper" class="">
