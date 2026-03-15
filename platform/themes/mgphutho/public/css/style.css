@@ -7681,6 +7681,9 @@ span.btn-container__btn.btn1 {
     font-weight: 800;
     margin-bottom: 0;
 }
+.banner-wrapper{
+    position: relative;
+}
 .banner-wrapper .wpb_text_column {
     position: absolute;
     z-index: 3;
