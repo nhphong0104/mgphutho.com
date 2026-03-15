@@ -7681,10 +7681,10 @@ span.btn-container__btn.btn1 {
     font-weight: 800;
     margin-bottom: 0;
 }
-.banner-wrapper{
+#banner-wrapper{
     position: relative;
 }
-.banner-wrapper .wpb_text_column {
+#banner-wrapper .wpb_text_column {
     position: absolute;
     z-index: 3;
     top: 50%;
@@ -7693,7 +7693,7 @@ span.btn-container__btn.btn1 {
     color: #fff;
     margin: 0;
 }
-.banner-wrapper .wpb_text_column h1 {
+#banner-wrapper .wpb_text_column h1 {
     color: #fff;
     font-size: 46px;
     line-height: 1.3;
