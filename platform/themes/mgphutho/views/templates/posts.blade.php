@@ -4,7 +4,7 @@
             <div class="item-news">
                 <div class="img">
                     <div class="img__bg">
-                        <span style="background-image: url({{ RvMedia::getImageUrl($post->image, false, RvMedia::getDefaultImage()) }})"></span>
+                        <span style="background-image: url({{ RvMedia::getImageUrl($post->image) }})"></span>
                     </div>
                     <a href="{{ $post->url }}"  class="stretched-link"></a>
                 </div>
