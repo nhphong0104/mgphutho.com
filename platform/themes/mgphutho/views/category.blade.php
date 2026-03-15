@@ -10,13 +10,11 @@
                 class="vc_single_image-img attachment-full" alt="banner-tintuc" decoding="async" loading="lazy">
         </div>
     </div>
-    <div class="container">
-        <div class="wpb_text_column wpb_content_element  absolute_left" style="left: 175.4px;">
-            <div class="wpb_wrapper">
-                <h1>{{ $category->name }}</h1>
-                <p>Cung cấp những thông tin mới nhất<br>
-                    về MG Motor.</p>
-            </div>
+    <div class="wpb_text_column wpb_content_element  absolute_left" >
+        <div class="wpb_wrapper">
+            <h1>{{ $category->name }}</h1>
+            <p>Cung cấp những thông tin mới nhất<br>
+                về MG Motor.</p>
         </div>
     </div>
 </div>
