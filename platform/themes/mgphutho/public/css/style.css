@@ -4547,7 +4547,7 @@ Main components
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
     .container {
-        width: 1180px;
+        width: 1440px;
     }
 }
 
@@ -4560,11 +4560,6 @@ Main components
 @media (min-width: 992px) {
     .container {
         width: 980px;
-    }
-}
-@media (min-width: 1200px) {
-    .container {
-        width: 1180px;
     }
 }
 
