@@ -1,4 +1,7 @@
-@php Theme::set('pageName', __('Blog')) @endphp
+@php 
+    Theme::set('pageName', __('Blog'));
+    Theme::layout('default');
+@endphp
 <div class="block-detail">
     <div class="container">
         <div class="block-detail__top">
