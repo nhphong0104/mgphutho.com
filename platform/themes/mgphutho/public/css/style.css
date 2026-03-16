@@ -8373,3 +8373,18 @@ hr{
         font-size: 1.75rem;
     }
 }
+.mySwiper .item-news {
+    display: unset;
+    flex-wrap: unset;
+    align-items: unset;
+}
+
+.mySwiper .item-news .img {
+    flex: unset;
+    max-width: unset; 
+}
+
+.mySwiper .item-news__content {
+    flex: unset;
+    padding-left: unset;
+}		
