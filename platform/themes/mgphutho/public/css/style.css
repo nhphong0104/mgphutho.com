@@ -7094,6 +7094,7 @@ span.btn-container__btn.btn1 {
     color: var(--black);
     font-size: 1.3rem;
     margin-bottom: 15px;
+    height: 50px;
 }
 
 .block-car__info span {
@@ -7213,7 +7214,7 @@ span.btn-container__btn.btn1 {
     border-color: var(--gray2);
 }
 .category-car-image {
-    min-height: 430px;
+    height: 430px;
 }
 .category-car-image>img {
     width: 100%;
