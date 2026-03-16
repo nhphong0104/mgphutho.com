@@ -3894,6 +3894,7 @@ Main components
         width: 16.66667%;
         float: left;
         position: relative;
+        height: 210px;
     }
     .cd-primary-nav .cd-secondary-nav > li:nth-child(4n + 2) {
         /* +2 because we have 2 list items with display:none */

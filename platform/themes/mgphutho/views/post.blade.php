@@ -27,6 +27,7 @@
         </div>
     </div>
 </div>
+<hr class="my-4">
 @php $relatedPosts = get_related_posts($post->id, 2); @endphp
 
 @if ($relatedPosts->count())
