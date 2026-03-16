@@ -6,7 +6,7 @@
             <div class="dsc-section text-center text-md-start mt-2"> {!! BaseHelper::clean($subtitle) !!}</div>
         @endif
 
-        <div class="swiper mySwiper">
+        <div class="swiper mySwiper mt-4">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     @foreach (get_recent_posts(6) as $post)
