@@ -8334,6 +8334,7 @@ span.btn-container__btn.btn1 {
     transform: scale(1.1)
 }
 
+
 .item-service::before {
     background: linear-gradient(360deg, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0) 100%)
 }
@@ -8362,4 +8363,8 @@ span.btn-container__btn.btn1 {
     font-size: 3rem;
     color: var(--red);
     line-height: 110%
+}
+hr{
+    border-top: 1px solid #f3f3f3;
+    opacity: 1;
 }
