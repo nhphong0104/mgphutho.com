@@ -2,6 +2,7 @@
 
 namespace Botble\Ecommerce\Forms;
 
+use Botble\Base\Facades\Assets;
 use Botble\Base\Forms\FieldOptions\ContentFieldOption;
 use Botble\Base\Forms\FieldOptions\CoreIconFieldOption;
 use Botble\Base\Forms\FieldOptions\MediaImageFieldOption;
@@ -9,6 +10,7 @@ use Botble\Base\Forms\FieldOptions\NameFieldOption;
 use Botble\Base\Forms\FieldOptions\OnOffFieldOption;
 use Botble\Base\Forms\FieldOptions\SelectFieldOption;
 use Botble\Base\Forms\FieldOptions\StatusFieldOption;
+use Botble\Base\Forms\FieldOptions\TextFieldOption;
 use Botble\Base\Forms\Fields\CoreIconField;
 use Botble\Base\Forms\Fields\EditorField;
 use Botble\Base\Forms\Fields\MediaImageField;
@@ -25,6 +27,7 @@ class ProductCategoryForm extends FormAbstract
 {
     public function setup(): void
     {
+        Assets::addScripts(['input-mask']);
         $categories = ProductCategoryHelper::getTreeCategoriesOptions(ProductCategoryHelper::getTreeCategories());
 
         $categories = [0 => trans('plugins/ecommerce::product-categories.none')] + $categories;
@@ -42,15 +45,12 @@ class ProductCategoryForm extends FormAbstract
             ])
             ->add('name', TextField::class, NameFieldOption::make())
            
-            ->add('category_price', 'number', [
-                'label' =>  __('Category Price'),
-                'value' => get_ecommerce_setting('minimum_order_amount', 0),
-                'attr' => [
-                    'data-thousands-separator' => EcommerceHelper::getThousandSeparatorForInputMask(),
-                    'data-decimal-separator' => EcommerceHelper::getDecimalSeparatorForInputMask(),
-                    'group-flat' => true,
-                ],
-            ])
+            ->add(
+                'category_price',
+                TextField::class, // Must be a text field, not number field
+                TextFieldOption::make()
+                    ->addAttribute('class', 'form-control input-mask-number')
+            )
             ->add(
                 'parent_id',
                 SelectField::class,
