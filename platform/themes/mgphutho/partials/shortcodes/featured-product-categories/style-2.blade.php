@@ -29,7 +29,7 @@
                     <h3 class="category-car-name"><a href="{{ $category->url }}" title="MG4 EV">{!! BaseHelper::clean($category->name) !!}</a>
                     </h3>
 
-                    <p class="category-car-price">Giá từ: <strong>{{ number_format($category->price) }} VND</strong></p>
+                    <p class="category-car-price">Giá từ: <strong>{{ number_format($category->category_price) }} VND</strong></p>
                 </div>
 
                 <div class="category-car-desc detail-content">
