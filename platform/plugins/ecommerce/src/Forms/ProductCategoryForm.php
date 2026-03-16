@@ -50,6 +50,7 @@ class ProductCategoryForm extends FormAbstract
                 TextField::class, // Must be a text field, not number field
                 TextFieldOption::make()
                     ->addAttribute('class', 'form-control input-mask-number')
+                    ->label("Giá khởi điểm")
             )
             ->add(
                 'parent_id',
