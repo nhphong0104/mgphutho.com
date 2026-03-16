@@ -22,5 +22,6 @@
         'style-1' => __('Style 1'),
         'style-2' => __('Style 2'),
         'style-3' => __('Style 3'),
+        'style-4' => __('Style 4'),
     ], Arr::get($attributes, 'style')) !!}
 </div>
