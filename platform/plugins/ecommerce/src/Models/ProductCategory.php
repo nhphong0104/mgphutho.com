@@ -33,6 +33,7 @@ class ProductCategory extends BaseModel implements HasTreeCategoryContract
         'parent_id',
         'description',
         'category_intro',
+        'category_price',
         'order',
         'status',
         'image',

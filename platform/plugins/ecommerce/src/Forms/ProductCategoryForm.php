@@ -40,6 +40,12 @@ class ProductCategoryForm extends FormAbstract
                 'value' => $this->getModel()->exists ? $this->getModel()->order : $maxOrder + 1,
             ])
             ->add('name', TextField::class, NameFieldOption::make())
+            ->add('category_price', TextField::class, [
+                'label' => __('Category Price'),
+                'help_block' => [
+                    'text' => __('Enter the price for this category'),
+                ],
+            ])
             ->add(
                 'parent_id',
                 SelectField::class,
@@ -58,6 +64,7 @@ class ProductCategoryForm extends FormAbstract
                 EditorField::class,
                 ContentFieldOption::make()->label("Category introduction")
             )
+            
             ->add('status', SelectField::class, StatusFieldOption::make())
             ->add('image', MediaImageField::class, MediaImageFieldOption::make())
             ->add(
