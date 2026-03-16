@@ -8346,3 +8346,12 @@ span.btn-container__btn.btn1 {
 .item-service .stretched-link::after {
     z-index: 3
 }
+
+.ic--logo-brit {
+    width: 160px;
+    background-image: url("../img/logo_brit.png")
+}
+
+.ic--logo-brit::before {
+    padding-top: 30%
+}
