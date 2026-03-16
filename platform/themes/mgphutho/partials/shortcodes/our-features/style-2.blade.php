@@ -12,7 +12,7 @@
                         class="icon fast-access-icon">&nbsp;<em class="fa fa-usd">&nbsp;</em></span> <span
                         class="fast-access-title">Yêu cầu báo giá</span> </a></div>
 
-            <div class="col-4"><a class="fast-access" href="/mua-xe-tra-gop-485309n.html"><span
+            <div class="col-4"><a class="fast-access" href="/mua-xe-tra-gop"><span
                         class="fast-access-icon">&nbsp;<em class="fa fa-calculator">&nbsp;</em></span> <span
                         class="fast-access-title">Thủ tục trả góp</span> </a></div>
 
