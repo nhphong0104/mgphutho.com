@@ -8355,3 +8355,9 @@ span.btn-container__btn.btn1 {
 .ic--logo-brit::before {
     padding-top: 30%
 }
+
+.tt-section {
+    font-size: 3rem;
+    color: var(--red);
+    line-height: 110%
+}
