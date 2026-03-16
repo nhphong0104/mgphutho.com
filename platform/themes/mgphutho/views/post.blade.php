@@ -33,7 +33,7 @@
 @if ($relatedPosts->count())
     <div class="container">
         <div class="tt-section">
-            {{ __('Related posts') }}
+            Bài viết liên quan
         </div>
         <div class="row">
             @foreach ($relatedPosts as $relatedItem)
