@@ -16,6 +16,7 @@ use Botble\Base\Forms\Fields\OnOffField;
 use Botble\Base\Forms\Fields\SelectField;
 use Botble\Base\Forms\Fields\TextField;
 use Botble\Base\Forms\FormAbstract;
+use Botble\Ecommerce\Facades\EcommerceHelper;
 use Botble\Ecommerce\Facades\ProductCategoryHelper;
 use Botble\Ecommerce\Http\Requests\ProductCategoryRequest;
 use Botble\Ecommerce\Models\ProductCategory;
@@ -40,10 +41,14 @@ class ProductCategoryForm extends FormAbstract
                 'value' => $this->getModel()->exists ? $this->getModel()->order : $maxOrder + 1,
             ])
             ->add('name', TextField::class, NameFieldOption::make())
-            ->add('category_price', TextField::class, [
-                'label' => __('Category Price'),
-                'help_block' => [
-                    'text' => __('Enter the price for this category'),
+           
+            ->add('category_price', 'number', [
+                'label' =>  __('Category Price'),
+                'value' => get_ecommerce_setting('minimum_order_amount', 0),
+                'attr' => [
+                    'data-thousands-separator' => EcommerceHelper::getThousandSeparatorForInputMask(),
+                    'data-decimal-separator' => EcommerceHelper::getDecimalSeparatorForInputMask(),
+                    'group-flat' => true,
                 ],
             ])
             ->add(
