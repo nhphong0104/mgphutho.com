@@ -9,7 +9,7 @@
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    @foreach (get_featured_posts(6) as $post)
+                    @foreach (get_related_posts(6) as $post)
                     <!-- <div class="col-12 col-lg-4 mt-4"> -->
                             <div class="item-news">
                                 <div class="img">
