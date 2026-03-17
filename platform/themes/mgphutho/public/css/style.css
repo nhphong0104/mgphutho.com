@@ -8388,3 +8388,11 @@ hr{
     flex: unset;
     padding-left: unset;
 }		
+.background_bg {
+    background-position: 50%;
+    background-size: cover;
+}
+.popup_content {
+    padding: 50px;
+    text-align: center;
+}

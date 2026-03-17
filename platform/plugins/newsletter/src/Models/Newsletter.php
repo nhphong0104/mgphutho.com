@@ -13,6 +13,8 @@ class Newsletter extends BaseModel
     protected $fillable = [
         'email',
         'name',
+        'phone',
+        'product_category_id',
         'status',
     ];
 

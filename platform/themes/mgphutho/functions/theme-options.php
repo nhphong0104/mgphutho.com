@@ -110,5 +110,46 @@ app()->booted(function () {
                 'name'  => 'primary_color',
                 'value' => '#ff2b4a',
             ],
+        ])
+        ->setField([
+            'id' => 'enable_newsletter_popup',
+            'section_id' => 'opt-text-subsection-general',
+            'type' => 'customSelect',
+            'label' => __('Enable Newsletter popup?'),
+            'attributes' => [
+                'name' => 'enable_newsletter_popup',
+                'list' => [
+                    'no' => trans('core/base::base.no'),
+                    'yes' => trans('core/base::base.yes'),
+                ],
+                'value' => 'yes',
+                'options' => [
+                    'class' => 'form-control',
+                ],
+            ],
+        ])
+        ->setField([
+            'id' => 'newsletter_image',
+            'section_id' => 'opt-text-subsection-general',
+            'type' => 'mediaImage',
+            'label' => __('Image for newsletter popup'),
+            'attributes' => [
+                'name' => 'newsletter_image',
+                'value' => null,
+            ],
+        ])
+        ->setField([
+            'id' => 'newsletter_show_after_seconds',
+            'section_id' => 'opt-text-subsection-general',
+            'type' => 'number',
+            'label' => __('Newsletter popup delay time (seconds)'),
+            'attributes' => [
+                'name' => 'newsletter_show_after_seconds',
+                'value' => 10,
+                'options' => [
+                    'class' => 'form-control',
+                    'placeholder' => __('Default: 10 (seconds)'),
+                ],
+            ],
         ]);
 });

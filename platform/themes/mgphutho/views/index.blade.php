@@ -125,7 +125,7 @@
                                 </a>
                             </div>
                             <div class="col-6">
-                                <a href="#" class="btn-container btn-container--gray full-container"
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#newsletter-modal" class="btn-container btn-container--gray full-container"
                                     ref="tel:0971593326">
                                     <span class="btn-container__mas">NHẬN ƯU ĐÃI</span>
                                     <span class="btn-container__btn">NHẬN ƯU ĐÃI</span>

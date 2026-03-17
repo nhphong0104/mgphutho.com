@@ -86,6 +86,7 @@ class PublicController extends BaseController
 
     public function ajaxLoadPopup()
     {
+        $categoryIds = get_feature_product_categories();
         $newsletterForm = NewsletterForm::create()
             ->remove(['wrapper_before', 'wrapper_after', 'email'])
             ->addBefore(
@@ -97,6 +98,24 @@ class PublicController extends BaseController
                     ->maxLength(-1)
                     ->placeholder(__('Enter Your Email'))
                     ->required()
+            )
+            ->addBefore(
+                'email',
+                'phone',
+                 PhoneField::class,
+                 PhoneFieldOption::make()
+                     ->label(__('Phone Number'))
+                     ->maxLength(-1)
+                     ->placeholder(__('Enter Your Phone Number'))
+            )
+            ->addBefore(
+                'phone',
+                'product_category_id',
+                EmailField::class,
+                EmailFieldOption::make()
+                    ->label(__('Email Address'))
+                    ->maxLength(-1)
+                    ->placeholder(__('Enter Your Email'))
             )
             ->addAfter(
                 'submit',
