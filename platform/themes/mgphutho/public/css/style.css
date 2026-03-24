@@ -8372,6 +8372,9 @@ hr{
     .block-detail h2.fs48 {
         font-size: 1.75rem;
     }
+    .category-car-image {
+        height: 100%;
+    }
 }
 .mySwiper .item-news {
     display: unset;
