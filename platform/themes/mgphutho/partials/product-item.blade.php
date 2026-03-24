@@ -7,7 +7,6 @@
         <div class="tt-product">
             <h3 class="category-car-name"><a href="{{ $product->url }}" title="{{ $product->name }}">{!! BaseHelper::clean($product->name) !!}</a>
             </h3>
-
             <p class="category-car-price">Giá từ: <strong>{{ number_format($product->price) }} VND</strong></p>
         </div>
     </div>

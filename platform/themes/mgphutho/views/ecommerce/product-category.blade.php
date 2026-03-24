@@ -31,7 +31,7 @@
                             nhận Báo giá xe lăn bánh tốt nhất</span></a></div>
             </div>
         </div>
-        <div class="grid-content group">
+        <div class="grid-content group product-list">
             <div class="row">
                 @foreach ($products as $product)
                     <div class="col-12 col-md-4 col-car">
