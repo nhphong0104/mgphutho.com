@@ -1,4 +1,3 @@
-
 <div class="footer group">
     <div class="container group footer-content">
         <div class="footer-content group">
@@ -56,23 +55,27 @@
 </section>
 
 <p id="back-top"><a href="javascript:void(0);" title="Scroll To Top"><i class="fa fa-angle-up"></i>Top</a></p>
-<a class="btn-call-now" href="tel:{{theme_option('hotline')}}" title="Gọi ngay cho chúng tôi"><em
-        class="fa fa-phone">&nbsp;</em></a>
 <div class="cd-overlay"></div>
 
-<div class="wrap_hotline"><aside id="custom_html-2" class="widget_text widget sbg_widget Hotline widget_custom_html"><div class="textwidget custom-html-widget"><a href="tel:0918184646" class="callhotline" rel="nofollow">
-<div class="call-phone">
-<div class="animated infinite zoomIn call-circle"></div>
-<div class="animated infinite pulse call-circle-fill"></div>
-<div class="animated infinite tada call-img-circle"></div>
+<div class="wrap_hotline">
+    <aside id="custom_html-2" class="widget_text widget sbg_widget Hotline widget_custom_html">
+        <div class="textwidget custom-html-widget"><a href="tel:{{ theme_option('hotline') }}" class="callhotline" rel="nofollow">
+                <div class="call-phone">
+                    <div class="animated infinite zoomIn call-circle"></div>
+                    <div class="animated infinite pulse call-circle-fill"></div>
+                    <div class="animated infinite tada call-img-circle"></div>
+                </div>
+            </a>
+            <div class="fb_zalo">
+                <ul>
+                    <li><a href="https://m.me/mgphutho.vn" target="_blank" rel="noopener"><img
+                                src="https://mgphutho.com/storage/icons/fb.png" alt="Fb"></a></li>
+                    <li><a href="https://zalo.me/{{ theme_option('hotline') }}" target="_blank" rel="noopener"><img
+                                src="https://mgphutho.com/storage/icons/zalo.png" alt="Zalo"></a></li>
+                </ul>
+            </div>
+        </div>
+    </aside>
 </div>
-</a>
-<div class="fb_zalo">
-<ul>
-	<li><a href="https://m.me/dailymglangha" target="_blank" rel="noopener"><img src="https://mglangha.com.vn/wp-content/uploads/2024/02/fb.png" alt="Fb"></a></li>
-<li><a href="https://zalo.me/0918184646" target="_blank" rel="noopener"><img src="https://mglangha.com.vn/wp-content/uploads/2024/02/zalo.png" alt="Zalo"></a></li>
-</ul>
-</div></div></aside></div>
 
 {!! Theme::partial('popup_customer_data') !!}
-
