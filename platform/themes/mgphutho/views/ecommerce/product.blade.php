@@ -56,10 +56,6 @@
                     <span class="btn-container__mas">Thêm vào giỏ hàng</span>
                     <span class="btn-container__btn">Thêm vào giỏ hàng</span>
                 </a>
-                <a href="/dai-ly/" class="btn-container btn-container--red">
-                    <span class="btn-container__mas">Danh sách cửa hàng</span>
-                    <span class="btn-container__btn btn1">Danh sách cửa hàng</span>
-                </a>
             </div>
         </div>
     </div>

@@ -8643,3 +8643,12 @@ hr{
     -webkit-animation-duration: 1s;
     animation-duration: 1s
 }
+.hidden{
+    display: none !important;
+}
+.contact-form-style-1 {
+    text-align: left;
+}
+.contact-form-style-1 #content{
+    display:none !important;
+}

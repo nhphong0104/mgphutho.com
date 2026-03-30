@@ -25,34 +25,8 @@
                                     </div>
                                     <p>Ngay sau khi nhận được yêu cầu Chúng tôi sẽ gửi Báo giá Ưu đãi đến Quý khách ngay!</p>
                                 </div>
-                                {!!
-                                \Botble\Newsletter\Forms\Fronts\NewsletterForm::create()
-                                ->setFormInputClass('form-control rounded-0 mb-3')
-                                    ->modify('name', 'text', [
-                                        'attr' => ['placeholder' => __('Enter Your Name')],
-                                    ])
-                                    ->setFormInputClass('form-control rounded-0 mb-3')
-                                    ->modify('email', 'email', [
-                                        'attr' => ['placeholder' => __('Enter Your Email')],
-                                    ])
-                                    ->setFormInputClass('form-control rounded-0 mb-3')
-                                    ->modify('phone', 'text', [
-                                        'attr' => ['placeholder' => __('Enter Your Phone')],
-                                    ])
-                                    ->setFormInputClass('form-control rounded-0 mb-3')
-                                     ->modify('product_category_id', 'select', [
-                                        'choices' => get_product_categories()->pluck('name', 'id')->toArray(),
-                                        'attr' => ['placeholder' => __('Select Product Category')],
-                                    ])
-                                    ->setFormInputClass('form-control rounded-0 mb-3')
-                                    ->modify('submit', 'submit', [
-                                        'attr' => [
-                                            'class' => 'btn btn-block text-uppercase rounded-0"',
-                                            'style' => 'background: #333; color: #fff;',
-                                        ],
-                                    ])
-                                    ->renderForm()
-                                    !!}
+
+                                {!! \Botble\Contact\Forms\Fronts\DataCustomer::create()->renderForm() !!}
                             </div>
                         </div>
                     </div>
