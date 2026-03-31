@@ -14,7 +14,7 @@
                         <div class="col-sm-5">
                             @if (theme_option('newsletter_image'))
                                 <div class="background_bg h-100"
-                                    data-img-src="{{ RvMedia::getImageUrl(theme_option('newsletter_image')) }}"></div>
+                                    style="background-image: url('{{ RvMedia::getImageUrl(theme_option('newsletter_image')) }}');"></div>
                             @endif
                         </div>
                         <div class="col-sm-7">
