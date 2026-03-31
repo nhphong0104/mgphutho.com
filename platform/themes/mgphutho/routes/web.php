@@ -15,6 +15,8 @@ Route::group(['controller' => MgphuthoController::class, 'middleware' => ['web',
         //Route::get('/get-category-product/{category}',[LanbanhController::class,'getCategoryProduct']);
         Route::get('/get-product/{category_id}',[LanbanhController::class,'getProduct']);
         Route::get('/get-product-detail/{product_id}',[LanbanhController::class,'getProductDetail']);
+
+        Route::get('/gui-thong-tin-thanh-cong',[LanbanhController::class,'sendQuotationSuccess']);
     });
 });
 

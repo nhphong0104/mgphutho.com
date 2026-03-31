@@ -18,6 +18,11 @@ class LanbanhController extends Controller
         return Theme::scope('lanbanh', compact('categoryProduct'))->render();
     }
 
+    public function sendQuotationSuccess()
+    {
+        return Theme::scope('send-quotation-success')->render();
+    }
+
 
     public function getProduct($category_id)
     {

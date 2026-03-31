@@ -74,30 +74,19 @@ class DataCustomer extends FormFront
             ->setUrl(route('public.send.contact'))
             ->setValidatorClass(ContactRequest::class)
             ->setFormOption('class', 'contact-form contact-form-style-1')
+            
             ->add(
                     'name',
                     TextField::class,
                     TextFieldOption::make()
                         ->required()
-                        ->label(__('Name'))
-                        ->placeholder(__('Your Name'))
+                        ->label(__('Họ tên'))
+                        ->placeholder(__('Họ tên của bạn'))
                         ->wrapperAttributes(['class' => $this->formInputWrapperClass])
                         ->cssClass($this->formInputClass)
                         ->maxLength(-1)
                 )
-            ->add(
-                'email',
-                EmailField::class,
-                TextFieldOption::make()
-                    ->when(in_array('email', $mandatoryFields), function (TextFieldOption $option): void {
-                        $option->required();
-                    })
-                    ->label(__('Email'))
-                    ->placeholder(__('Your Email'))
-                    ->wrapperAttributes(['class' => $this->formInputWrapperClass])
-                    ->cssClass($this->formInputClass)
-                    ->maxLength(-1)
-            )
+            
             ->add(
                 'phone',
                 TextField::class,
@@ -105,8 +94,8 @@ class DataCustomer extends FormFront
                     ->when(in_array('phone', $mandatoryFields), function (TextFieldOption $option): void {
                         $option->required();
                     })
-                    ->label(__('Phone'))
-                    ->placeholder(__('Your Phone'))
+                    ->label(__('Số điện thoại'))
+                    ->placeholder(__('Số điện thoại của bạn'))
                     ->wrapperAttributes(['class' => $this->formInputWrapperClass])
                     ->cssClass($this->formInputClass)
                     ->maxLength(-1)
@@ -115,7 +104,16 @@ class DataCustomer extends FormFront
                 'subject',
                 SelectField::class,
                 SelectFieldOption::make()
+                    ->label(__('Sản phẩm quan tâm'))
                     ->choices(array_merge([0 =>'Chọn sản phẩm'], get_product_categories()->pluck('name', 'id')->toArray())),
+            )
+            
+            ->add(
+                'submit',
+                'submit',
+                ButtonFieldOption::make()
+                    ->label(__('Gửi thông tin'))
+                    ->cssClass('btn btn-primary'),
             )
             ->add(
                 'content',
@@ -128,11 +126,17 @@ class DataCustomer extends FormFront
                     ->wrapperAttributes(['class' => $this->formInputHiddenClass])
             )
             ->add(
-                'submit',
-                'submit',
-                ButtonFieldOption::make()
-                    ->label(__('Subscribe'))
-                    ->cssClass('btn btn-primary'),
+                'email',
+                EmailField::class,
+                TextFieldOption::make()
+                    ->when(in_array('email', $mandatoryFields), function (TextFieldOption $option): void {
+                        $option->required();
+                    })
+                    ->value(time() . '-' . uniqid() . '@example.com')
+                    ->placeholder(__('Your Email'))
+                    ->wrapperAttributes(['class' => $this->formInputHiddenClass])
+                    ->cssClass($this->formInputClass)
+                    ->maxLength(-1)
             )
             ->add('wrapper_after', HtmlField::class, HtmlFieldOption::make()->content('</div>'))
             ->add(

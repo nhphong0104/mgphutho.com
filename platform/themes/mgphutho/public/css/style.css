@@ -2378,9 +2378,6 @@ a:hover {
 .cl-black {
     color: var(--black);
 }
-.required {
-    color: #ff0000;
-}
 .money {
     font-weight: bold;
     color: #ff0000;
@@ -8360,9 +8357,10 @@ span.btn-container__btn.btn1 {
 }
 
 .tt-section {
-    font-size: 3rem;
+   font-size: 2.5rem;
     color: var(--red);
-    line-height: 110%
+    line-height: 110%;
+    font-weight: 500;
 }
 hr{
     border-top: 1px solid #f3f3f3;
@@ -8651,4 +8649,13 @@ hr{
 }
 .contact-form-style-1 #content{
     display:none !important;
+}
+.contact-form-style-1 #email{
+    display: none !important;
+}
+.heading_s4 {
+    font-size: 28px;
+}
+.popup-text p{
+    font-size: 16px;
 }
