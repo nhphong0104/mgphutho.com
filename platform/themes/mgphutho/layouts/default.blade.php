@@ -7,6 +7,7 @@
     <meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5, user-scalable=1"
         name="viewport" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://mgphutho.com/vendor/core/plugins/contact/css/contact-public.css" />
     {!! Theme::header() !!}
 </head>
 
