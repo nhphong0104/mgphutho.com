@@ -11,13 +11,13 @@
                         <span aria-hidden="true"><i class="fa fa-close"></i></span>
                     </button>
                     <div class="row no-gutters">
-                        <div class="col-sm-5">
+                        <div class="col-sm-6">
                             @if (theme_option('newsletter_image'))
                                 <div class="background_bg h-100"
                                     style="background-image: url('{{ RvMedia::getImageUrl(theme_option('newsletter_image')) }}');"></div>
                             @endif
                         </div>
-                        <div class="col-sm-7">
+                        <div class="col-sm-6">
                             <div class="popup_content">
                                 <div class="popup-text">
                                     <div class="heading_s4">
