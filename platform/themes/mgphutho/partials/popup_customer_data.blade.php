@@ -35,5 +35,3 @@
         </div>
     </div>
 @endif
-
-@dd(get_products()->pluck('name', 'id')->toArray())
