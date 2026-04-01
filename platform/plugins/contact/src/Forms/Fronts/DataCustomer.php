@@ -105,7 +105,7 @@ class DataCustomer extends FormFront
                 SelectField::class,
                 SelectFieldOption::make()
                     ->label(__('Sản phẩm quan tâm'))
-                    ->choices(array_merge([0 =>'Chọn sản phẩm'], get_product_categories()->pluck('name', 'id')->toArray())),
+                    ->choices(array_merge([0 =>'Chọn sản phẩm'], get_products()->pluck('name', 'id')->toArray())),
             )
             
             ->add(
