@@ -16,6 +16,7 @@ use Botble\Table\BulkChanges\PhoneBulkChange;
 use Botble\Table\BulkChanges\StatusBulkChange;
 use Botble\Table\Columns\CreatedAtColumn;
 use Botble\Table\Columns\EmailColumn;
+use Botble\Table\Columns\FormattedColumn;
 use Botble\Table\Columns\IdColumn;
 use Botble\Table\Columns\NameColumn;
 use Botble\Table\Columns\PhoneColumn;
@@ -36,8 +37,16 @@ class ContactTable extends TableAbstract
             ])
             ->addColumns([
                 IdColumn::make(),
+                FormattedColumn::make('subject')
+                    ->title('Sản phẩm quan tâm')
+                    ->width(150)
+                    ->orderable(false)
+                    ->searchable(false)
+                    ->getValueUsing(function (FormattedColumn $column) {
+                        return get_product_by_id($column->getItem()->subject)?->name ?: $column->getItem()->subject;
+                    })
+                    ->withEmptyState(),
                 NameColumn::make()->route('contacts.edit'),
-                EmailColumn::make()->linkable()->withEmptyState(),
                 PhoneColumn::make()->linkable()->withEmptyState(),
                 CreatedAtColumn::make(),
                 StatusColumn::make(),
@@ -57,6 +66,7 @@ class ContactTable extends TableAbstract
                     ->select([
                         'id',
                         'name',
+                        'subject',
                         'phone',
                         'email',
                         'created_at',

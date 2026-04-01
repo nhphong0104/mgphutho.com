@@ -41,12 +41,12 @@
     @if ($contact->subject)
         <x-core::datagrid.item>
             <x-slot:title>{{ trans('plugins/contact::contact.tables.subject') }}</x-slot:title>
-            {{ $contact->subject }}
+            {{ get_product_by_id($contact->subject)->name ?? $contact->subject }}
         </x-core::datagrid.item>
     @endif
 </x-core::datagrid>
 
 <x-core::datagrid.item class="mt-3">
     <x-slot:title>{{ trans('plugins/contact::contact.tables.content') }}</x-slot:title>
-    {{ $contact->content ?: '...' }}
+    {{ $contact->content ?: '...' }} {{ get_product_by_id($contact->subject)->name }}
 </x-core::datagrid.item>
