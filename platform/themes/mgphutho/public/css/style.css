@@ -2663,6 +2663,7 @@ img {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     border-radius: 50%;
+    font-size: 15px;
 }
 .hotline .icon em:before {
     font-size: 125%;

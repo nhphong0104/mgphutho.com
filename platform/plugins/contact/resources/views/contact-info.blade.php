@@ -48,5 +48,5 @@
 
 <x-core::datagrid.item class="mt-3">
     <x-slot:title>{{ trans('plugins/contact::contact.tables.content') }}</x-slot:title>
-    {{ $contact->content ?: '...' }} {{ get_product_by_id($contact->subject)->name }}
+    {{ $contact->content ?: '...' }} {{ get_product_by_id($contact->subject)->name?? $contact->subject }}
 </x-core::datagrid.item>
