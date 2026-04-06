@@ -63,7 +63,7 @@ class LanbanhController extends Controller
 
         return response()->json([
             'name' => $product->name,
-            'price' => $product->price,
+            'price' => number_format($product->price, 0, ',', '.'),
             'img' => RvMedia::getImageUrl($product->image, 'medium'),
         ]);
     
