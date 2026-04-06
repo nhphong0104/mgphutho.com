@@ -61,8 +61,6 @@ class LanbanhController extends Controller
             abort(404);
         }
 
-        $product = $product->first();
-
         return response()->json([
             'name' => $product->name,
             'price' => $product->price,
