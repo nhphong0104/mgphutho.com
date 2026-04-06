@@ -55,13 +55,7 @@ class LanbanhController extends Controller
 
     public function getProductDetail($product_id)
     {
-        $product = get_products([
-            'condition' => [
-                'ec_products.id' => $product_id,
-            ],
-            'take' => 1,
-            'with' => EcommerceHelper::withProductEagerLoadingRelations(),
-        ]);
+        $product = get_product_by_id($product_id);    
 
         if (! $product) {
             abort(404);
